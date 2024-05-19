@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentify Labs Results</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #56CCF2, #2F80ED);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 70%;
+            max-width: 680px;
+            height: auto;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #307adc;
+        }
+        .result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .back-button {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sentiment Analysis Results</h2>
+        <br>
+        <p>Input sentence: {{ text }}</p>
+        <p>Predicted sentiment: {{ sentiment }}</p>
+        <a href="/" class="btn btn-primary">Go back</a>
+    </div>
+    <!-- Link Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
